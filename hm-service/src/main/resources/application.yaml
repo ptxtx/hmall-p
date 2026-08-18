@@ -46,7 +46,7 @@ hm:
     password: hmall123
     tokenTTL: 30m
   auth:
-    excludePaths:
+    excludePaths: # 不需要认证的接口
       - /search/**
       - /users/login
       - /items/**
