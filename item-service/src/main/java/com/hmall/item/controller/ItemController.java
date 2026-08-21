@@ -37,6 +37,7 @@ public class ItemController {
     @GetMapping
     public List<ItemDTO> queryItemByIds(@RequestParam("ids") List<Long> ids){
         return itemService.queryItemByIds(ids);
+
     }
 
     @ApiOperation("根据id查询商品")

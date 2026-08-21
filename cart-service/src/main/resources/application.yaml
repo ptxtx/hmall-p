@@ -11,4 +11,10 @@ hm:
     package: com.hmall.cart.controller
     desc: 黑马商城购物车服务接口文档
 
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8090 # sentinel控制台地址
+      http-method-specify: true # 是否设置请求方式作为资源名称
 # keytool -genkeypair -alias hmall -keyalg RSA -keypass hmall123 -keystore hmall.jks -storepass hmall123
